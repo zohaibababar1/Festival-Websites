@@ -1,0 +1,100 @@
+
+  .nav {
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+    
+  .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  #artist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .artist-card {
+    width: 350px;
+    margin: 5px;
+    border: 1px solid #918888;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.8s;
+     position: relative; 
+    overflow: hidden; /* Hide overflow to prevent image overlap */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-width: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .artist-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .artist-image {
+    max-width: 100%;
+    height: auto;
+    transition: transform 1s;
+  }
+  
+  .artist-name {
+    max-width: 100%;
+    height: auto;
+    display: none;
+    /* color: white; */
+  }
+ 
+  body { background-color: #1e2223;
+    color: rgb(215, 202, 202);
+}
+
+.footer {
+  color: white;
+  background-color: red;
+  text-align: center;
+  font-size: 30px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer p{
+  font-size: 12px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.social-icons {
+  font-size: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+  .book-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #77b379;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.book-button:hover {
+    background-color: #45a049;
+}

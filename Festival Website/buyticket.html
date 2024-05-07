@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Ticket Booking</title>
+    <link rel="stylesheet" href="buyticketstyles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="artist.html">Schedule</a>
+        <a href="buyticket.html">Buy Tickets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <div class="formData">
+                <h2>Ticket Booking</h2>
+                <form id="buyTicket">
+                    <label for="ticketType">Ticket Type:</label>
+                    <select id="ticketType" onchange="updateTicketOptions()">
+                        <option value="oneDayPass">One Day Pass</option>
+                        <option value="threeDayPass">Three Day Pass</option>
+                    </select>
+
+                    <label for="selectTicket">Ticket Category:</label>
+                    <select id="selectTicket">
+                        <option value="standard">Standard</option>
+                        <option value="vip">VIP</option>
+                        <option value="premium">Premium</option>
+                    </select>
+
+                    <label for="Tickets">Number Of Tickets</label>
+                    <input type="number" id="numberOfTicktes" min="1" value="1">
+
+                    <label for="creditCard">Credit Card (6 digits):</label>
+                    <input type="text" id="creditCard" placeholder="Enter Credit Card Number" name="creditCard" pattern="\d{6}" minlength="6" maxlength="6" required>
+
+                    <button type="button" class="submit-button" onclick="formSubmit()">Pay Now</button>
+                </form>
+            </div>
+
+            <div class="order-summary-container" id="orderSummary">
+                <h2>Order Summary</h2>
+                <div class="summary-details" id="summaryDetails"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div class="footer">
+        <span class="social-icons"> <ion-icon name="logo-facebook"></ion-icon> </span>
+        <span class="social-icons"> <ion-icon name="logo-instagram"></ion-icon></ion-icon> </span>
+        <span class="social-icons"> <ion-icon name="logo-twitter"></ion-icon></ion-icon> </span>
+        <span class="social-icons"> <ion-icon name="logo-pinterest"></ion-icon></ion-icon> </span>
+        <p >Copyright &copy; 2023-2024</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src = "buyticketscript.js">
+        
+    </script>
+</body>
+</html>
